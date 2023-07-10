@@ -15,11 +15,10 @@ load_dotenv()
 st.write("First message")
 
 # Load the OpenAI API key from the environment variable
-if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
-    print("OPENAI_API_KEY is not set")
+api_key = os.getenv("OPENAI_API_KEY")
+if api_key is None or api_key == "":
+    st.error("OPENAI_API_KEY is not set. Please set it in the environment variables of your Streamlit Cloud app.")
     exit(1)
-else:
-    print("OPENAI_API_KEY is set")
 
 # st.set_page_config(page_title="EMPLOYEE DATA")
 st.header("VIDA LABORAL")
