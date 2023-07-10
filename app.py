@@ -21,8 +21,8 @@ if os.getenv("OPENAI_API_KEY") is None or os.getenv("OPENAI_API_KEY") == "":
 else:
     print("OPENAI_API_KEY is set")
 
-st.set_page_config(page_title="EMPLOYEE DATA")
-st.header("EMPLOYEE DATA")
+# st.set_page_config(page_title="EMPLOYEE DATA")
+st.header("VIDA LABORAL")
 
 csv_file = r"Data_empleados.csv"
 fixed_file = r"Data_empleados_fixed.csv"
