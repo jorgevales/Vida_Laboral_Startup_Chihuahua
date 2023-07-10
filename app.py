@@ -12,8 +12,6 @@ import os
 
 load_dotenv()
 
-st.write("First message")
-
 # Load the OpenAI API key from the environment variable
 api_key = os.getenv("OPENAI_API_KEY")
 if api_key is None or api_key == "":
