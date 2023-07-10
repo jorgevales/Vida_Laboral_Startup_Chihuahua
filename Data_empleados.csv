@@ -1,0 +1,15 @@
+id_empleado,nombre_completo,primer_nombre,segundo_nombre,apellido_paterno,apellido_materno,fecha_de_nacimiento,fecha_de_inicio_vida_laboral,id_empresa_empleadora,empresa_empleadora,direccion_empresa,telefono_empresa,fecha_de_inicio,cargo,departamento,descripcion_del_puesto,id_jefe,nombre_completo_jefe,fecha_de_asenso,aumento_de_sueldo,salario_diario,modalidad_de_pago,fecha_de_salida,motivo_de_salida,justificacion_del_motivo_de_salida,idiomas,maximo_nivel_educativo,Habilidades_tecnicas
+5198727322,Jorge Eduardo Vales Cervantes,Jorge,Eduardo,Vales,Cervantes,10/22/2000,1/1/2018,97525726,Genpact,Calle Principal 123,+1 123-456-7890,1/1/2018,Analista de datos,Producción,Analizar y visualizar datos,12345,Juan Pérez,,FALSE, $315.60 ,semanal,12/31/2019,Baja voluntaria,En busca de nuevas oportunidades,"Ingles, Español",Licenciatura,Programación
+5198727322,Jorge Eduardo Vales Cervantes,Jorge,Eduardo,Vales,Cervantes,10/22/2000,1/1/2018,87223865,flex,Avenida Central 456,+1 987-654-3210,1/1/2020,Sr project manager,Producción,Gestionar proyectos,67890,María Gómez,,FALSE, $325.48 ,quincenal,2/26/2021,Despido,Falta de rendimiento,"Ingles, Español",Bachillerato,Diseño gráfico
+5198727322,Jorge Eduardo Vales Cervantes,Jorge,Eduardo,Vales,Cervantes,10/22/2000,1/1/2018,15379524,Bosch,Paseo de los Robles 789,+1 555-555-5555,5/4/2021,Supervisor de línea,Producción,Supervisar operaciones en línea,23456,Carlos Rodríguez,,FALSE, $503.45 ,semanal,EMPRESA ACTUAL,,,"Ingles, Español",Licenciatura,Marketing digital
+9446865042,Esteban Carillo Ojeda,Esteban,,Carrillo,Ojeda,5/3/2002,1/1/2020,23546234,BRP,Plaza Mayor 234,+1 777-777-7777,1/1/2022,Practicante pagado,Producción,Apoyar en tareas de producción,34567,Laura González,,FALSE, $318.94 ,semanal,EMPRESA ACTUAL,,,"Ingles, Español",Licenciatura,Investigación científica
+9446865042,Esteban Carillo Ojeda,Esteban,,Carrillo,Ojeda,5/3/2002,1/1/2020,23546234,BRP,Plaza Mayor 234,+1 888-888-8888,4/1/2022,Supervisor de línea,Producción,Supervisar operaciones en línea,34567,Laura González,4/1/2023,TRUE, $513.21 ,semanal,EMPRESA ACTUAL,,,"Ingles, Español",Licenciatura,"Investigación científica, Ventas"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,
