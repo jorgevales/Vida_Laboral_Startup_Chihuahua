@@ -34,10 +34,10 @@ selected = option_menu(
 
 if selected == "Inicio":
     col1, col2, col3 = st.columns([1,6,1])
-    col2.image("STARTUPSCHOOL.png", width=550)
+    st.image("STARTUPSCHOOL.png", width=550)
 
     col1, col2 = st.columns([3,1]) 
-    col1.write("SON-IA, donde la excelencia empresarial \
+    st.write("SON-IA, donde la excelencia empresarial \
 y la toma de decisiones estratégicas se unen en un proyecto innovador. \
 Le presentamos una propuesta disruptiva: una alianza estratégica entre bases de datos \
 de comportamiento del empleado, pertenecientes a empresas líderes en nuestra ciudad. \
@@ -55,8 +55,6 @@ descubra un mundo de posibilidades para tomar decisiones de contratación más a
     lottie_trend = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_ZQqYEY.json")
     lottie_trend_file = load_lottiefile("trend.json")
 
-    with col2:
-        st_lottie(lottie_trend)
 
 if selected == "Proyecto":
     load_dotenv()
