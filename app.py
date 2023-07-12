@@ -34,7 +34,7 @@ selected = option_menu(
 
 if selected == "Inicio":
     col1, col2, col3 = st.columns([1,6,1])
-    st.image("STARTUPSCHOOL.png", width=550)
+    st.image("STARTUPSCHOOL.png", width=350)
 
     col1, col2 = st.columns([3,1]) 
     st.write("SON-IA, donde la excelencia empresarial \
