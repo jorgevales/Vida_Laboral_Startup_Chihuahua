@@ -81,7 +81,14 @@ if selected == "Proyecto":
 
     chat_model_to_use = OpenAI(temperature=0)
 
-    agent = create_csv_agent(chat_model_to_use, fixed_file, verbose=True)
+    agent = create_csv_agent(chat_model_to_use, 
+                             fixed_file, 
+                             verbose=True, 
+                             prefix = "You are working with a pandas dataframe in Python. \
+The name of the dataframe is `df`. You must answer every question in Spanish language. \
+Your goal is to provide recommendations to either hire or not hire an applicant based on its \
+job history provided in the dataframe 'df'.\n\
+You should use the tools below to answer the question posed of you:")
 
     user_question = st.text_input("Hazme una pregunta del empleado que quieras conocer:")
 
@@ -103,11 +110,36 @@ if selected == "Proyecto":
     with st.expander("Ejemplos de preguntas para hacer"):
         st.write("1. ¿Cuántos empleados hay en mi base de datos?")
         st.write("2. Dime el historial laboral de Jorge Vales")
-        st.write("3. ¿Cuántos empleos ha tenido Esteban Carrillo?")
+        st.write("3. ¿Cuántos empleos ha tenido Daniel Castro?")
         st.write("4. ¿Cuál es la edad promedio dentro de mi archivo?")
+        st.write("5. ¿Cuál es la empresa que ha tenido mayor retención de empleados?")
     
     with st.expander("Funcionamiento"):
-        st.write("La aplicación está cargada con una base de datos ejemplo")
+        st.write("La aplicación está cargada con una base de datos de 35 empleados ejemplo, la cual simula \
+la unión entre bases de datos de comportamiento del empleado de empresas locales.")
+        st.write("La intención del software NO es decidir, sino recomendar posibles candidatos basado en patrones \
+de comportamiento que ha presentado el empleado a lo largo de su trayectoria laboral.")
+        
+        st.write("El software hace uso de nuestro proceso de análisis y recomendación simple, R.A.R.")
+
+        st.markdown("<p style='font-size: 20px; font-weight: bold;'>R.A.R. = Recopilar - Analizar - Recomendar </p>", unsafe_allow_html=True)
+
+        st.markdown("<p style='font-size: 16px; font-weight: bold;'>Recopilar</p>", unsafe_allow_html=True)
+        st.write("Dentro de la primera etapa, Recopilar, se condensa la información proveniente de diversas bases de \
+datos, se limpia y se estructura para poder analizarla correctamente.")
+        
+        st.markdown("<p style='font-size: 16px; font-weight: bold;'>Analizar</p>", unsafe_allow_html=True)
+        st.write("La etapa Analizar abarca la combinación de programación analítica utilizando el lenguaje Python \
+y el uso de inteligencia artificial para un entendimiento del resultado final con lenguaje natural.")
+        
+        st.markdown("<p style='font-size: 16px; font-weight: bold;'>Recomendar</p>", unsafe_allow_html=True)
+        st.write("Recomendar, busca proporcionar resultados eficientes después de analizar grandes cantidades \
+de información para que el tomador de decisiones pueda hacerlas de manera efectiva y precisa.")
+
+    with st.expander("Capturas del proceso"):
+        st.image("Nombres.png")
+        st.write(" ")
+        st.image("ianalisis2.png")
 
 if selected == "Read.me":
     st.title("Read.me")
