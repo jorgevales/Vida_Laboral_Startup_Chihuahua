@@ -26,11 +26,15 @@ def load_lottiefile(filepath: str):
 
 selected = option_menu(
     menu_title=None,
-    options=["Inicio", "Proyecto", "Read.me"],
+    options=["Inicio", "NIA", "Read.me"],
     icons=["house", "braces", "person-circle"],
     orientation="horizontal",
-    default_index=1
+    default_index=0
     )
+
+# Initialize the session state if it doesn't exist
+if "page" not in st.session_state:
+    st.session_state.page = "inicio"
 
 if selected == "Inicio":
     col1, col2, col3 = st.columns([1,6,1])
@@ -39,19 +43,22 @@ if selected == "Inicio":
     col1, col2 = st.columns([3,1]) 
     st.write("En la era de la información, donde los datos reinan, presentamos una solución innovadora \
 para optimizar el proceso de contratación: una base de datos unificada y centralizada del \
-comportamiento laboral de los empleados de todas las empresas de la ciudad. A través de esta plataforma, \
-logramos capturar y reflejar un historial laboral completo, detallado y en constante actualización, desde \
-el inicio hasta el final de cada empleo. Pero no nos detenemos allí, llevamos la gestión de recursos humanos \
+comportamiento laboral de los empleados de todas las empresas de la ciudad.")
+    
+    st.write("A través de esta plataforma, logramos capturar y reflejar un historial laboral completo, \
+detallado y en constante actualización, desde el inicio hasta el final de cada empleo. Pero no nos detenemos allí, llevamos la gestión de recursos humanos \
 al siguiente nivel al implementar técnicas avanzadas de programación analítica e inteligencia artificial. \
 Nuestra meta es hacer que la toma de decisiones en el proceso de contratación sea más eficiente, certera y \
-efectiva. Prepárese para transformar la forma en que selecciona y contrata talento. Bienvenidos al futuro \
-de la gestión de recursos humanos.")
+efectiva.")
+    
+    st.write("Prepárese para transformar la forma en que selecciona y contrata talento. Bienvenidos al futuro \
+de la contratación.")
     
     lottie_trend = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_ZQqYEY.json")
     lottie_trend_file = load_lottiefile("trend.json")
 
 
-if selected == "Proyecto":
+elif selected == "NIA":
     load_dotenv()
 
     # Load the OpenAI API key from the environment variable
@@ -138,12 +145,22 @@ de información para que el tomador de decisiones pueda hacerlas de manera efect
         st.write(" ")
         st.image("ianalisis2.png")
 
-if selected == "Read.me":
+elif selected == "Read.me":
     st.title("Read.me")
 
     st.write("John W. Gardner decía 'La excelencia es hacer las cosas ordinarias extraordinariamente bien', \
-y creo que es totalmente cierto.\n\
-Desde hace tiempo, la excelencia es algo que he buscado con pasión, las ganas de querer darlo todo sin importar cual sea el proyecto.\n")
+y creo que es totalmente cierto.")
+    
+    st.write("Este proyecto no solo busca reflejar el futuro de lo que será el análisis de contratación para la industria sino \
+un destello de lo que será una inversión de bajo riesgo y altas ganancias en el futuro cercano. Y aunque esta \
+descripción aplica para NIA Analytics, por este medio los invito a considerar una oportunidad que va más allá \
+del proyecto en sí.")
+    
+    st.write("Dentro de unos meses estaré volando al otro lado del mundo a estudiar una maestría en Análisis de Negocios, \
+en la Universidad de Essex, Inglaterra. Hoy en día hay financiamientos y becas otorgadas las cuales me ayudarán a avanzar \
+")
+    
+
     
     st.write("")
 
