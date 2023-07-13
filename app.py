@@ -63,7 +63,7 @@ if selected == "Proyecto":
     # st.set_page_config(page_title="EMPLOYEE DATA")
     # st.header("VIDA LABORAL")
     st.markdown("<p style='font-size: 64px; font-weight: bold;'>NIA</p>", unsafe_allow_html=True)
-    st.write("NIA fue entrenada con una base de datos de 35 empleados ejemplo. Es posible hacer preguntas sobre \
+    st.write("NIA fue entrenada con una base de datos de 35 empleados ejemplo, y es posible hacer preguntas sobre \
 su historial de trabajo (vida laboral) utilizando lenguaje natural. \
 NIA utilizará programación analítica e inteligencia artificial para brindar la mejor respuesta posible.")
 
