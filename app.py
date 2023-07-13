@@ -34,23 +34,18 @@ selected = option_menu(
 
 if selected == "Inicio":
     col1, col2, col3 = st.columns([1,6,1])
-    st.image("STARTUPSCHOOL.png", width=350)
+    st.image("NIA Analytics 2.png")
 
     col1, col2 = st.columns([3,1]) 
-    st.write("SON-IA, donde la excelencia empresarial \
-y la toma de decisiones estratégicas se unen en un proyecto innovador. \
-Le presentamos una propuesta disruptiva: una alianza estratégica entre bases de datos \
-de comportamiento del empleado, pertenecientes a empresas líderes en nuestra ciudad. \
-Mediante la implementación de programación analítica e inteligencia artificial, \
-nos embarcamos en un viaje hacia la optimización de la contratación de empleados. \
-Nuestra visión se centra en la creación de una base de datos centralizada, que alberga \
-un exhaustivo registro histórico de su vida laboral. Aprovechando todo el potencial \
-de la inteligencia artificial y la programación analítica, desentrañamos patrones de \
-comportamiento que van más allá de la mera información sobre sus empleos anteriores. \
-Nos sumergimos en sus éxitos, fracasos y comportamientos determinantes en cada etapa \
-de su trayectoria profesional. Le invitamos a adentrarse en este emocionante viaje, \
-donde el futuro de la contratación se transforma en una realidad. Únase a nosotros y \
-descubra un mundo de posibilidades para tomar decisiones de contratación más acertadas que nunca antes.")
+    st.write("En la era de la información, donde los datos reinan, presentamos una solución innovadora \
+para optimizar el proceso de contratación: una base de datos unificada y centralizada del \
+comportamiento laboral de los empleados de todas las empresas de la ciudad. A través de esta plataforma, \
+logramos capturar y reflejar un historial laboral completo, detallado y en constante actualización, desde \
+el inicio hasta el final de cada empleo. Pero no nos detenemos allí, llevamos la gestión de recursos humanos \
+al siguiente nivel al implementar técnicas avanzadas de programación analítica e inteligencia artificial. \
+Nuestra meta es hacer que la toma de decisiones en el proceso de contratación sea más eficiente, certera y \
+efectiva. Prepárese para transformar la forma en que selecciona y contrata talento. Bienvenidos al futuro \
+de la gestión de recursos humanos.")
     
     lottie_trend = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_ZQqYEY.json")
     lottie_trend_file = load_lottiefile("trend.json")
@@ -67,7 +62,10 @@ if selected == "Proyecto":
 
     # st.set_page_config(page_title="EMPLOYEE DATA")
     # st.header("VIDA LABORAL")
-    st.markdown("<p style='font-size: 64px; font-weight: bold;'>S O N I A :</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 64px; font-weight: bold;'>NIA</p>", unsafe_allow_html=True)
+    st.write("NIA fue entrenada con una base de datos de 35 empleados ejemplo. Es posible hacer preguntas sobre \
+su historial de trabajo (vida laboral) utilizando lenguaje natural. \
+NIA utilizará programación analítica e inteligencia artificial para brindar la mejor respuesta posible.")
 
     csv_file = r"Data_empleados.csv"
     fixed_file = r"Data_empleados_fixed.csv"
@@ -85,9 +83,7 @@ if selected == "Proyecto":
                              fixed_file, 
                              verbose=True, 
                              prefix = "You are working with a pandas dataframe in Python. \
-The name of the dataframe is `df`. You must answer every question in Spanish language. \
-Your goal is to provide recommendations to either hire or not hire an applicant based on its \
-job history provided in the dataframe 'df'.\n\
+The name of the dataframe is `df`. Your final answer must be in Spanish language. If you don't know the answer say that, don't try to answer either way.\n\
 You should use the tools below to answer the question posed of you:")
 
     user_question = st.text_input("Hazme una pregunta del empleado que quieras conocer:")
@@ -104,6 +100,7 @@ You should use the tools below to answer the question posed of you:")
             print(f"Prompt Tokens: {cb.prompt_tokens}")
             print(f"Completion Tokens: {cb.completion_tokens}")
             print(f"Total Cost (USD): ${format(cb.total_cost, '.50f')}")
+    st.write("\n")
     st.write("\n")
     st.write("\n")
 
