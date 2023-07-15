@@ -198,6 +198,6 @@ travesía conmigo a través de una beca, apoyo financiero o contacto que conside
     
     st.write("")
 
-    with st.expander("Carta de aceptacional:"):
+    with st.expander("Carta de aceptación incondicional"):
         st.markdown("<p style='font-size: 14px; font-weight: bold;'>Carta de aceptación incondicional</p>", unsafe_allow_html=True)
         st.image("Unconditional offer.png")
