@@ -112,7 +112,7 @@ You should use the tools below to answer the question posed of you:")
     st.write("\n")
 
     with st.expander("Ejemplos de preguntas para hacer"):
-        st.write("1. ¿Cuántos empleados hay en mi base de datos?")
+        st.write("1. ¿Cuántos empleados únicos hay en la base de datos?")
         st.write("2. Dime el historial laboral de Jorge Vales")
         st.write("3. ¿Cuántos empleos ha tenido Daniel Castro?")
         st.write("4. ¿Cuál es la edad promedio dentro de mi archivo?")
@@ -140,10 +140,17 @@ y el uso de inteligencia artificial para un entendimiento del resultado final co
         st.write("Recomendar, busca proporcionar resultados eficientes después de analizar grandes cantidades \
 de información para que el tomador de decisiones pueda hacerlas de manera efectiva y precisa.")
 
-    with st.expander("Capturas del proceso"):
-        st.image("Nombres.png")
-        st.write(" ")
-        st.image("ianalisis2.png")
+    with st.expander("Nombres de algunos empleados ejemplo"):
+        st.write("Andrea Moreno Herrera\n\
+Ana Belén Medina López\n\
+Jorge Eduardo Vales Cervantes\n\
+Pedro Martínez García\n\
+Victoria Ríos Sánchez\n\
+Daniel Castro Vargas\n\
+Ana María López Hernández\n\
+Emilio Gutiérrez Navarro\n\
+Valeria Domínguez Soto\n\
+Luis Alberto Soto Ramírez")
 
 elif selected == "Read.me":
     st.title("Read.me")
