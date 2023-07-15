@@ -192,9 +192,9 @@ del proyecto en sí.")
 en la Universidad de Essex, Inglaterra, a partir del mes de octubre. Si está interesado/a en ser parte de esta \
 travesía conmigo a través de una beca, apoyo financiero o contacto que considere relevante no dude en ponerse en comunicación conmigo a través de:")
     
-    st.markdown("<p style='font-size: 16px; font-weight: bold;'>jorgevales123@gmail.com</p>", unsafe_allow_html=True)
-    st.markdown("<p style='font-size: 16px; font-weight: bold;'>(656) 573 2212</p>", unsafe_allow_html=True)
-    st.markdown("<p style='font-size: 16px; font-weight: bold;'>www.linkedin.com/in/jorge-vales</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 16px; font-weight: bold;'>Correo: jorgevales123@gmail.com</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 16px; font-weight: bold;'>Teléfono: (656) 573 2212</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 16px; font-weight: bold;'>Linked-In: www.linkedin.com/in/jorge-vales</p>", unsafe_allow_html=True)
     
     st.write("")
 
