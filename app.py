@@ -141,16 +141,41 @@ y el uso de inteligencia artificial para un entendimiento del resultado final co
 de información para que el tomador de decisiones pueda hacerlas de manera efectiva y precisa.")
 
     with st.expander("Nombres de algunos empleados ejemplo"):
-        st.write("Andrea Moreno Herrera\n\
-Ana Belén Medina López\n\
-Jorge Eduardo Vales Cervantes\n\
-Pedro Martínez García\n\
-Victoria Ríos Sánchez\n\
-Daniel Castro Vargas\n\
-Ana María López Hernández\n\
-Emilio Gutiérrez Navarro\n\
-Valeria Domínguez Soto\n\
-Luis Alberto Soto Ramírez")
+        st.write("Andrea Moreno Herrera")
+        st.write("Ana Belén Medina López")
+        st.write("Jorge Eduardo Vales Cervantes")
+        st.write("Pedro Martínez García")
+        st.write("Victoria Ríos Sánchez")
+        st.write("Daniel Castro Vargas")
+        st.write("Ana María López Hernández")
+        st.write("Emilio Gutiérrez Navarro")
+        st.write("Valeria Domínguez Soto")
+        st.write("Luis Alberto Soto Ramírez")
+        st.write("Silvia Romero Cortés")
+        st.write("Eduardo Torres Mendoza")
+        st.write("María Fernández Torres")
+        st.write("Guillermo Navarro León")
+        st.write("Mariana Cruz Herrera")
+        st.write("Francisco Herrera Ríos")
+        st.write("Carlos Rodríguez Medina")
+        st.write("Julieta Cortés Medina")
+        st.write("Gabriela Méndez Vargas")
+        st.write("Carolina Castro Sánchez")
+        st.write("Laura Torres Mendoza")
+        st.write("Mario León Sánchez")
+        st.write("Andrés Sánchez Ramírez")
+        st.write("Miguel Ángel Silva Ríos")
+        st.write("Roberto Ramírez Silva")
+        st.write("Paola Sánchez Vargas")
+        st.write("Paola Ríos Domínguez")
+        st.write("Lucía Vargas Medina")
+        st.write("Natalia Gómez Cruz")
+        st.write("José López Martínez")
+        st.write("Esteban Vargas Medina")
+        st.write("Rafaela Aguilar Torres")
+        st.write("Alejandro Mendoza Ortega")
+        st.write("Diego Fernández Gómez")
+        st.write("Paula Ortega Domínguez")
 
 elif selected == "Read.me":
     st.title("Read.me")
