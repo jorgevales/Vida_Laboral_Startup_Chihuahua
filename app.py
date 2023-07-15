@@ -140,7 +140,7 @@ y el uso de inteligencia artificial para un entendimiento del resultado final co
         st.write("Recomendar, busca proporcionar resultados eficientes después de analizar grandes cantidades \
 de información para que el tomador de decisiones pueda hacerlas de manera efectiva y precisa.")
 
-    with st.expander("Nombres de algunos empleados ejemplo"):
+    with st.expander("Nombres de empleados ejemplo"):
         st.write("Andrea Moreno Herrera")
         st.write("Ana Belén Medina López")
         st.write("Jorge Eduardo Vales Cervantes")
@@ -188,13 +188,16 @@ un destello de lo que será una inversión de bajo riesgo y altas ganancias en e
 descripción aplica para NIA Analytics, por este medio los invito a considerar una oportunidad que va más allá \
 del proyecto en sí.")
     
-    st.write("Dentro de unos meses estaré volando al otro lado del mundo a estudiar una maestría en Análisis de Negocios, \
-en la Universidad de Essex, Inglaterra. Hoy en día hay financiamientos y becas otorgadas las cuales me ayudarán a avanzar \
-")
+    st.write("En marzo de este año fui aceptado para empezar a estudiar una maestría en Análisis de Negocios, \
+en la Universidad de Essex, Inglaterra, a partir del mes de octubre. Si está interesado/a en ser parte de esta \
+travesía conmigo a través de una beca, apoyo financiero o contacto que considere relevante no dude en ponerse en comunicación conmigo a través de:")
     
-
+    st.markdown("<p style='font-size: 14px; font-weight: bold;'>jorgevales123@gmail.com</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 14px; font-weight: bold;'>(656) 573 2212</p>", unsafe_allow_html=True)
+    st.markdown("<p style='font-size: 14px; font-weight: bold;'>www.linkedin.com/in/jorge-vales</p>", unsafe_allow_html=True)
     
     st.write("")
 
-    with st.expander("Futuro"):
+    with st.expander("Carta de aceptacional:"):
+        st.markdown("<p style='font-size: 14px; font-weight: bold;'>Carta de aceptación incondicional</p>", unsafe_allow_html=True)
         st.image("Unconditional offer.png")
